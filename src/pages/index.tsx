@@ -19,7 +19,7 @@ const Home: React.FC<HomeProps> = () => {
           <div className="flex justify-between items-center h-16">
             <div className="flex-shrink-0">
               <Image 
-                src="/logo.png" 
+                src="/personal_website/logo.png"
                 alt="University Logo" 
                 width={120} 
                 height={40}
@@ -67,14 +67,9 @@ const Home: React.FC<HomeProps> = () => {
 
           {/* Profile Picture */}
           <div>
-            <Image
-              src="/profile.jpg"
-              alt="Profile Picture"
-              width={400}
-              height={500}
-              className="rounded-lg"
-              priority
-            />
+            <div className="w-[400px] h-[500px] bg-gray-200 rounded-lg flex items-center justify-center">
+              <span className="text-gray-400">Profile Picture Placeholder</span>
+            </div>
           </div>
         </div>
       </main>
@@ -82,4 +77,4 @@ const Home: React.FC<HomeProps> = () => {
   )
 }
 
-export default Home 
+export default Home
