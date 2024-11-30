@@ -13,6 +13,35 @@ const Home: React.FC<HomeProps> = () => {
         <meta name="description" content="Academic profile and research work" />
       </Head>
 
+      <nav className="border-b bg-white py-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center">
+            <div className="text-xl font-bold">ETH Zürich</div>
+            
+            <div className="flex space-x-8">
+              <a href="#" className="text-[#007acc] hover:text-[#005c99]">PEOPLE</a>
+              <a href="#" className="text-gray-600 hover:text-gray-900">MSC THESIS @ SRI</a>
+              <a href="#" className="text-gray-600 hover:text-gray-900">RESEARCH</a>
+              <a href="#" className="text-gray-600 hover:text-gray-900">PUBLICATIONS</a>
+              <a href="#" className="text-gray-600 hover:text-gray-900">BLOG</a>
+              <a href="#" className="text-gray-600 hover:text-gray-900">TEACHING</a>
+              <a href="#" className="text-gray-600 hover:text-gray-900">HIRING</a>
+              <a href="#" className="text-gray-600 hover:text-gray-900">CONTACT</a>
+            </div>
+
+            <div className="flex items-center">
+              <Image 
+                src="/personal_website/srilab.png" 
+                alt="SRI LAB" 
+                width={100} 
+                height={30}
+                priority
+              />
+            </div>
+          </div>
+        </div>
+      </nav>
+
       <header className="bg-[#f4f4f4] py-8 px-4 border-b-2 border-[#dddddd]">
         <div className="flex items-center justify-center gap-8 max-w-[800px] mx-auto">
           <div className="profile">
