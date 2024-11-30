@@ -5,7 +5,16 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        blue: {
+          600: '#0076B6', // ETH blue
+          800: '#005485',
+        }
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 } 
